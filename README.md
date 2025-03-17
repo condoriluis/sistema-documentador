@@ -55,5 +55,5 @@ composer run dev
 
 Para acceder al sistema, usa las siguientes credenciales predeterminadas:
 
--   **Correo Electrónico** admin@documentador.com
--   **Pass** 12345678
+-   **Correo Electrónico:** admin@documentador.com
+-   **Pass:** 12345678
