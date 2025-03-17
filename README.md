@@ -12,8 +12,8 @@ Este sistema está desarrollado con **Laravel 12** y está diseñado para docume
 
 ## Uso
 
--   **1. Crear un documento:** Ingresa a la sección de "Nuevo Documento", proporciona el nombre, título, descripción y código, y guarda el documento.
--   **2. Visualizar documentos:** Puedes acceder a la lista de documentos creados en la sección "Documentos" y visualizar sus detalles.
+-   **1. Crear un documento:** Ingresa a la sección de "Nuevo Documento", proporciona el nombre, título, descripción y código, nota, y guarda el documento.
+-   **2. Visualizar documentos:** Puedes acceder a la lista de documentos creados en la sección "Documentos" y visualizar sus detalles, descargar, editar o eliminar.
 -   **3. Autenticación:** El sistema requiere autenticación para acceder a las funcionalidades de administración de documentos.
 
 ## Tecnologías Utilizadas
@@ -45,15 +45,47 @@ Sigue estos pasos para instalar y ejecutar el proyecto:
 git clone https://github.com/condoriluis/sistema-documentador.git
 ```
 
-## Ejecutar el proyecto
+## 2. Instalar dependencias
+
+```bash
+cd sistema-documentador
+composer install
+npm install
+```
+
+## 3. Copia el archivo .env.example y renómbralo a .env
+
+```bash
+cp .env.example .env
+```
+
+## 4. Generar clave de aplicación
+
+```bash
+php artisan key:generate
+```
+
+## 5. Migrar la base de datos SQLite
+
+```bash
+php artisan migrate
+```
+
+## 6. Correr el servidor
 
 ```bash
 composer run dev
 ```
 
+o
+
+```bash
+php artisan serve
+```
+
 ## Acceso al Sistema
 
-Para acceder al sistema, usa las siguientes credenciales predeterminadas:
+Para acceder al sistema, tiene que registrase:
 
--   **Correo Electrónico:** admin@documentador.com
--   **Pass:** 12345678
+-   **Correo Electrónico:** Ingrese un correo electrónico.
+-   **Contraseña:** Ingresa una contraseña de (8 caracteres como mínimo).
