@@ -32,7 +32,9 @@ git clone https://github.com/condoriluis/sistema-documentador.git
 
 ## Ejecutar el proyecto
 
+```bash
 composer run dev
+```
 
 ## Acceso al sistema
 
