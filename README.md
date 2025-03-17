@@ -85,7 +85,7 @@ php artisan serve
 
 ## Acceso al Sistema
 
-Para acceder al sistema, tiene que registrase:
+Para acceder al sistema, tiene que registrarse:
 
 -   **Correo Electrónico:** Ingrese un correo electrónico.
 -   **Contraseña:** Ingresa una contraseña de (8 caracteres como mínimo).
